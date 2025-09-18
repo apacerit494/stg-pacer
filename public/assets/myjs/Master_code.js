@@ -1,0 +1,309 @@
+$(document).ready(function () {
+
+
+    /*DECLARE VARIABLE*/
+    var FormAdd = $('#FormAdd'), FormEdit = $('#FormEdit');
+
+
+    $("#jqgrid_data").jqGrid({
+        url: site_url + '/MasterCode/jqgrid_master_code',
+        mtype: "GET",
+        datatype: "json",
+        postData: {
+            tipe_keyword: function () { return $("#tipe_keyword").val() },
+            keyword: function () { return $("#keyword").val() }
+        },
+        colModel: [
+            { label: 'ID', name: 'id', key: true, width: 100, align: 'center', hidden: true },
+            { label: 'Code Type', name: 'code_type', width: 150, align: 'center', search: true, searchoptions: { sopt: ['cn'] } },
+            { label: 'Code Type Detail', name: 'code_type_detail', width: 450, align: 'left' },
+            { label: 'Code Value', name: 'code_value', width: 100, align: 'center' },
+            { label: 'Code Description', name: 'code_description', width: 350, align: 'left' }
+
+        ],
+        viewrecords: true,
+        autowidth: true,
+        //width: 1068,
+        height: 250,
+        rowNum: 100,
+        rowList: [100, 200, 300],
+        rownumbers: true,
+        shrinkToFit: false,
+        toolbar: [true, "top"],
+        sortname: "code_type",
+        sortorder: "asc",
+        caption: " &nbsp&nbsp&nbsp MASTER CODE",
+        multiselect: false,
+        gridview: true,
+        // loadonce: true,
+        pager: "#jqgrid_data_pager",
+
+        ondblClickRow: function () {
+            $('#btn_edit').click();
+        }
+    });
+
+
+    // jQuery("#jqgrid_data").jqGrid('navGrid', '#jqgrid_data_pager', { del: false, add: false, edit: false, search: false });
+    // jQuery("#jqgrid_data").jqGrid('filterToolbar', { stringResult: true, searchOnEnter: true });
+
+
+    $("#t_jqgrid_data").append('<button class="jqGrid_add" id="btn_add"></button> <button class="jqGrid_edit" id="btn_edit"></button> <button class="jqGrid_delete" id="btn_delete"></button> ');
+
+
+    /*BEGIN SEARCH*/
+    $('#btn_search', '#jqgrid').click(function (e) {
+        e.preventDefault();
+        $('#jqgrid_data').trigger('reloadGrid');
+    })
+
+    $("#keyword").keydown(function (e) {
+        if (e.keyCode == 13) {
+            $("#jqGrid_data").trigger('reloadGrid');
+        }
+    });
+
+
+    /*SETUP BUTTON ACTIONS*/
+    $("#btn_add").click(function () {
+        $('#jqgrid').hide();
+        $('#add').show();
+        FormAdd.trigger('reset');
+    });
+
+    $('#btn_delete').click(function () {
+        selrow = $('#jqgrid_data').jqGrid('getGridParam', 'selrow');
+        if (selrow) {
+            $.confirm({
+                title: "Delete", icon: 'fa fa-trash', backgroundDismiss: false,
+                content: 'Delete Master Code ? Are You Sure?',
+                confirmButtonClass: 'btn green',
+                // confirmButtonCaption: 'Yes',
+                cancelButtonClass: 'btn red',
+                // cancelButtonText: 'No',
+                confirmButtonClass: 'btn green',
+                confirmButton: 'Yes',
+                cancelButton: 'No',
+                cancelButtonClass: 'btn red',
+                confirm: function () {
+                    $.ajax({
+                        type: "POST", dataType: "json", data: { scope_id: selrow },
+                        url: site_url + '/MasterCode/delete_master_code',
+                        success: function (response) {
+                            if (response.success === true) {
+                                $.alert({
+                                    title: 'Success', icon: 'fa fa-check', backgroundDismiss: false,
+                                    content: 'Delete Master Code Success.',
+                                    confirmButtonClass: 'btn green',
+                                    confirm: function () {
+                                        $('#userfile').val('');
+                                        $('#jqgrid_data').trigger('reloadGrid');
+                                    }
+                                })
+                            } else {
+                                Template.WarningAlert(response.msg);
+                            }
+                        },
+                        error: function () {
+                            Template.WarningAlert("Failed to Connect into Databases, Please Contact Your Administrator!");
+                        }
+                    })
+                }
+            })
+        } else {
+            Template.WarningAlert("Please select a row.");
+        }
+    });
+
+    $('#btn_edit').click(function (e) {
+        selrow = $('#jqgrid_data').jqGrid('getGridParam', 'selrow');
+        if (selrow) {
+            $.ajax({
+                type: "POST", dataType: "json", data: { id: selrow },
+                url: site_url + '/MasterCode/get_data_master_code_by_id',
+                success: function (response) {
+                    $('#jqgrid').hide();
+                    $('#edit').show();
+                    $('#id', FormEdit).val(response.id);
+                    $('#code_type', FormEdit).val(response.code_type);
+                    $('#code_type_detail', FormEdit).val(response.code_type_detail);
+                    $('#code_value', FormEdit).val(response.code_value);
+                    $('#code_description', FormEdit).val(response.code_description);
+                },
+                error: function () {
+                    Template.WarningAlert("Failed to Connect into Databases, Please Contact Your Administrator!");
+                }
+            })
+        } else {
+            Template.WarningAlert("Please select a row");
+        }
+    })
+
+    /*FORM ACTIONS*/
+    /*BEGIN ADD*/
+    FormAdd.validate({
+        errorElement: 'span', //default input error message container
+        errorClass: 'invalid-feedback', // default input error message class
+        focusInvalid: false, // do not focus the last invalid input
+        errorPlacement: function (error, element) {
+            if (element.prop('class') === 'form-control single-select') {
+                error.insertAfter(element.parent());
+            } else {
+                error.insertAfter(element);
+            }
+        },
+
+        ignore: "",
+        rules: {
+            code_type: { required: true },
+            code_value: { required: true },
+            code_description: { required: true }
+
+        },
+        invalidHandler: function (event, validator) { //display error alert on form submit              
+            $('.alert-error', FormAdd).show();
+            Template.scrollTo($('.alert-error', FormAdd), -200);
+        },
+        highlight: function (element) { // hightlight error inputs
+            $(element).removeClass('is-valid').addClass('is-invalid'); // set error class to the control group
+        },
+        unhighlight: function (element) { // revert the change dony by hightlight
+            $(element).removeClass('is-invalid').addClass('is-valid'); // set error class to the control group
+        },
+        submitHandler: function (form) {
+
+            FormAdd.ajaxSubmit({
+                dataType: 'json',
+                success: function (response) {
+                    if (response.success == true) {
+                        $.alert({
+                            title: 'Success', icon: 'fa fa-check', backgroundDismiss: false,
+                            content: 'Data Master Code berhasil ditambahkan',
+                            //content: response.msg,
+                            confirmButtonClass: 'btn-success',
+                            confirm: function () {
+                                $('.alert-error', FormAdd).hide();
+                                $('#jqgrid_data').trigger('reloadGrid');
+                                $('#btn_cancel', FormAdd).trigger('click');
+                                var class_a = $(".form-control");
+                                for (var i = 0; i < class_a.length; i++) {
+                                    class_a[i].classList.remove("is-valid");
+                                }
+                            }
+                        })
+                    } else {
+                        Template.WarningAlert(response.error);
+                    }
+                },
+                error: function () {
+                    Template.WarningAlert("Failed to Connect into Databases, Please Contact Your Administrator!");
+                }
+            });
+        }
+    });
+
+
+    $('#btn_cancel', FormAdd).click(function () {
+        $('#add').hide();
+        $('#jqgrid').show();
+        $('.alert-error', FormAdd).hide();
+        FormAdd.trigger('reset');
+        $('.error', FormAdd).removeClass('error');
+        $('.is-valid', FormAdd).removeClass('is-valid');
+        $('.is-invalid', FormAdd).removeClass('is-invalid');
+    })
+
+    /*BEGIN EDIT*/
+    FormEdit.validate({
+        errorElement: 'span', //default input error message container
+        errorClass: 'invalid-feedback', // default input error message class
+        focusInvalid: true, // do not focus the last invalid input
+        errorPlacement: function (error, element) {
+            if (element.prop('class') === 'form-control single-select') {
+                error.insertAfter(element.parent());
+            } else {
+                error.insertAfter(element);
+            }
+        },
+
+        ignore: "",
+        rules: {
+            code_type: { required: true },
+            code_value: { required: true },
+            code_description: { required: true }
+
+        },
+        invalidHandler: function (event, validator) { //display error alert on form submit              
+            $('.alert-error', FormEdit).show();
+            Template.scrollTo($('.alert-error', FormEdit), -200);
+        },
+        highlight: function (element) { // hightlight error inputs
+            $(element).removeClass('is-valid').addClass('is-invalid'); // set error class to the control group
+        },
+        unhighlight: function (element) { // revert the change dony by hightlight
+            $(element).removeClass('is-invalid').addClass('is-valid'); // set error class to the control group
+        },
+        submitHandler: function (form) {
+
+            FormEdit.ajaxSubmit({
+                dataType: 'json',
+                success: function (response) {
+                    if (response.success == true) {
+                        $.alert({
+                            title: 'Success', icon: 'fa fa-check', backgroundDismiss: false,
+                            content: 'Edit Master Code Success.',
+                            confirmButtonClass: 'btn-success',
+                            confirm: function () {
+                                $('.alert-error', FormEdit).hide();
+                                $('#jqgrid_data').trigger('reloadGrid');
+                                $('#btn_cancel', FormEdit).trigger('click');
+                                var class_a = $(".form-control");
+                                for (var i = 0; i < class_a.length; i++) {
+                                    class_a[i].classList.remove("is-valid");
+                                }
+                            }
+                        })
+                    } else {
+                        Template.WarningAlert(response.error);
+                    }
+                },
+                error: function () {
+                    Template.WarningAlert("Failed to Connect into Databases, Please Contact Your Administrator!");
+                }
+            });
+        }
+    });
+
+
+    $('#btn_cancel', FormEdit).click(function () {
+        $('#edit').hide();
+        $('#jqgrid').show();
+        $('.alert-error', FormEdit).hide();
+        FormEdit.trigger('reset');
+        $('.error', FormEdit).removeClass('error');
+        $('.is-valid', FormEdit).removeClass('is-valid');
+        $('.is-invalid', FormEdit).removeClass('is-invalid');
+    })
+
+
+    /*END EDIT*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}); //end of $(function(){});

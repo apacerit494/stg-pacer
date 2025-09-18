@@ -1,0 +1,5 @@
+[26-Jan-2023 05:30:57 UTC] PHP Warning:  require(./base/jsPacker.php): Failed to open stream: No such file or directory in /home/pacerco2/public_html/assets/Education/Doc_path/2d3aa95b0da14dd19509d4f0019eaa87/b374k.php on line 17
+[26-Jan-2023 05:30:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './base/jsPacker.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pacerco2/public_html/assets/Education/Doc_path/2d3aa95b0da14dd19509d4f0019eaa87/b374k.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/pacerco2/public_html/assets/Education/Doc_path/2d3aa95b0da14dd19509d4f0019eaa87/b374k.php on line 17

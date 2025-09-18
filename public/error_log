@@ -1,0 +1,32 @@
+[21-Jan-2023 05:30:41 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.33. in /home/pacerco2/lsppacer/vendor/composer/platform_check.php on line 24
+[21-Jan-2023 05:32:34 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.33. in /home/pacerco2/lsppacer/vendor/composer/platform_check.php on line 24
+[21-Jan-2023 05:32:35 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.33. in /home/pacerco2/lsppacer/vendor/composer/platform_check.php on line 24
+[21-Jan-2023 05:33:03 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.26. in /home/pacerco2/lsppacer/vendor/composer/platform_check.php on line 24
+[22-Jan-2023 16:40:14 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.26. in /home/pacerco2/lsppacer/vendor/composer/platform_check.php on line 24
+[22-Jan-2023 16:40:14 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.26. in /home/pacerco2/lsppacer/vendor/composer/platform_check.php on line 24
+[20-Mar-2023 03:06:31 UTC] PHP Warning:  require(/home/pacerco2/lsppacer/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php): Failed to open stream: No such file or directory in /home/pacerco2/public_html/index.php on line 38
+[20-Mar-2023 03:06:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/pacerco2/lsppacer/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pacerco2/public_html/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/pacerco2/public_html/index.php on line 38
+[20-Mar-2023 03:06:39 UTC] PHP Warning:  require(/home/pacerco2/lsppacer/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php): Failed to open stream: No such file or directory in /home/pacerco2/public_html/index.php on line 38
+[20-Mar-2023 03:06:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/pacerco2/lsppacer/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pacerco2/public_html/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/pacerco2/public_html/index.php on line 38
+[20-Mar-2023 03:06:50 UTC] PHP Warning:  require(/home/pacerco2/lsppacer/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php): Failed to open stream: No such file or directory in /home/pacerco2/public_html/index.php on line 38
+[20-Mar-2023 03:06:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/pacerco2/lsppacer/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pacerco2/public_html/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/pacerco2/public_html/index.php on line 38
+[20-Mar-2023 03:06:50 UTC] PHP Warning:  require(/home/pacerco2/lsppacer/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php): Failed to open stream: No such file or directory in /home/pacerco2/public_html/index.php on line 38
+[20-Mar-2023 03:06:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/pacerco2/lsppacer/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pacerco2/public_html/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/pacerco2/public_html/index.php on line 38
+[20-Mar-2023 03:06:51 UTC] PHP Warning:  require(/home/pacerco2/lsppacer/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php): Failed to open stream: No such file or directory in /home/pacerco2/public_html/index.php on line 38
+[20-Mar-2023 03:06:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/pacerco2/lsppacer/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pacerco2/public_html/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/pacerco2/public_html/index.php on line 38
+[14-Nov-2023 13:21:49 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.30. in /home/pacerco2/lsppacer/vendor/composer/platform_check.php on line 24

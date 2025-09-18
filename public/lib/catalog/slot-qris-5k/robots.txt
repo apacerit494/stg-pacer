@@ -1,0 +1,4 @@
+User-agent: *
+Allow: / 
+
+Sitemap: https://pacer.co.id/lib/catalog/slot-qris-5k/sitemap.xml
