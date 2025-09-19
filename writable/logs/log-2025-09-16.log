@@ -1,0 +1,616 @@
+CRITICAL - 2025-09-16 05:45:03 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 05:45:38 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 06:00:27 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 06:00:33 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-16 06:01:18 --> mysqli_sql_exception: Unknown column 'id' in 'WHERE' in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Controllers/Certification.php(1267): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Certification->submit_pengajuan_sertifikasi()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2025-09-16 06:01:30 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 06:02:28 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 06:05:00 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 06:05:31 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 06:06:17 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:27:16 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:28:06 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:28:26 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:28:32 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-16 07:29:03 --> mysqli_sql_exception: Unknown column 'id' in 'WHERE' in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Controllers/Certification.php(1267): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Certification->submit_pengajuan_sertifikasi()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2025-09-16 07:29:04 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:29:04 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:29:11 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:32:54 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:32:54 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:33:36 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:33:58 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:33:58 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:34:00 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:43:17 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:43:17 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:43:42 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:43:42 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 07:44:48 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/BaseController.php on line 173.
+ 1 APPPATH/Controllers/BaseController.php(173): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ScoringFinal.php(43): App\Controllers\BaseController->generate_menu()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 08:15:50 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 08:16:17 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-16 08:16:43 --> mysqli_sql_exception: Field 'bank_name' doesn't have a default value in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-16 08:16:43 --> Field 'bank_name' doesn't have a default value
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-16 08:16:47 --> mysqli_sql_exception: Field 'bank_name' doesn't have a default value in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-16 08:16:47 --> Field 'bank_name' doesn't have a default value
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-16 08:19:26 --> mysqli_sql_exception: Field 'bank_name' doesn't have a default value in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-16 08:19:26 --> Field 'bank_name' doesn't have a default value
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 08:23:26 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 08:23:26 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 08:23:28 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 08:24:11 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 08:24:14 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 08:24:35 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 08:25:13 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 08:26:03 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 08:28:07 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 08:28:34 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-16 08:28:57 --> mysqli_sql_exception: Field 'bank_name' doesn't have a default value in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-16 08:28:57 --> Field 'bank_name' doesn't have a default value
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-16 08:29:01 --> mysqli_sql_exception: Field 'bank_name' doesn't have a default value in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-16 08:29:01 --> Field 'bank_name' doesn't have a default value
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-16 08:31:14 --> mysqli_sql_exception: Field 'bank_name' doesn't have a default value in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-16 08:31:14 --> Field 'bank_name' doesn't have a default value
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-16 08:31:27 --> mysqli_sql_exception: Field 'bank_name' doesn't have a default value in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-16 08:31:27 --> Field 'bank_name' doesn't have a default value
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-16 08:31:32 --> mysqli_sql_exception: Field 'bank_name' doesn't have a default value in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-16 08:31:32 --> Field 'bank_name' doesn't have a default value
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-16 09:31:23 --> mysqli_sql_exception: FUNCTION pacer_dbpacernew.fhd_insert_comment_id does not exist in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/CertificationModel.php(622): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/Certification.php(941): App\Models\CertificationModel->get_comment_id()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Certification->pengajuan_sertifikasi()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-16 09:31:23 --> FUNCTION pacer_dbpacernew.fhd_insert_comment_id does not exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/CertificationModel.php(622): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Certification.php(941): App\Models\CertificationModel->get_comment_id()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->pengajuan_sertifikasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 09:40:54 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-16 09:41:28 --> mysqli_sql_exception: Field 'bank_name' doesn't have a default value in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-16 09:41:28 --> Field 'bank_name' doesn't have a default value
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-16 10:13:18 --> mysqli_sql_exception: Field 'bank_name' doesn't have a default value in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-16 10:13:18 --> Field 'bank_name' doesn't have a default value
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(344): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(341): App\Models\ScoringFinalModel->get_sk_number()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->verification_secretariat()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 10:28:38 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 11:30:45 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 11:31:01 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 11:41:17 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 11:45:10 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 11:45:10 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 11:45:13 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 13:42:38 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 14:28:14 --> Trying to access array offset on value of type null
+in APPPATH/Views/Home/news.php on line 49.
+ 1 APPPATH/Views/Home/news.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Home/news.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(46): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->news()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 14:34:18 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 14:34:53 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 21:52:38 --> You do not have sufficient permissions to access that page.
+in VENDORPATH/myth/auth/src/Filters/RoleFilter.php on line 59.
+ 1 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\RoleFilter->before()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-16 23:20:01 --> You do not have sufficient permissions to access that page.
+in VENDORPATH/myth/auth/src/Filters/RoleFilter.php on line 59.
+ 1 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\RoleFilter->before()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

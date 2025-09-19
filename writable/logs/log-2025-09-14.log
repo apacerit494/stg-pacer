@@ -1,0 +1,90 @@
+CRITICAL - 2025-09-14 01:37:01 --> Trying to access array offset on value of type null
+in APPPATH/Views/Home/news.php on line 49.
+ 1 APPPATH/Views/Home/news.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Home/news.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(46): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->news()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-14 04:02:34 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/BaseController.php on line 173.
+ 1 APPPATH/Controllers/BaseController.php(173): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ScoringFinal.php(43): App\Controllers\BaseController->generate_menu()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-14 14:14:39 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-09-14 14:14:39 --> 220 mail.smtp2go.com ESMTP Exim 4.98.1-S2G Sun, 14 Sep 2025 07:14:34 +0000
+
+hello: 250-mail.smtp2go.com Hello pacer.co.id [103.185.52.54]
+250-SIZE 52428800
+250-LIMITS MAILMAX=5000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH CRAM-MD5 PLAIN LOGIN
+250-CHUNKING
+250-PRDR
+250 HELP
+
+from: 250 sender ok.
+
+to: 250 Accepted <sekretariat@pacer.co.id>
+
+data: 354 Enter message, ending with "." on a line by itself
+
+550-From header sender domain not verified (gmail.com)
+550-On your Sending > Verified Senders page
+550 verify the sender domain or email to be allowed to send.
+
+quit: 221 mail.smtp2go.com closing connection
+
+The following SMTP error was encountered: 550-From header sender domain not verified (gmail.com)
+550-On your Sending > Verified Senders page
+550 verify the sender domain or email to be allowed to send.
+
+CRITICAL - 2025-09-14 05:28:47 --> Undefined array key 0
+in VENDORPATH/spipu/html2pdf/src/Html2Pdf.php on line 5272.
+ 1 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(5272): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1444): Spipu\Html2Pdf\Html2Pdf->_tag_open_TR()
+ 3 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1412): Spipu\Html2Pdf\Html2Pdf->_executeAction()
+ 4 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(3136): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+ 5 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1444): Spipu\Html2Pdf\Html2Pdf->_tag_open_DIV()
+ 6 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1412): Spipu\Html2Pdf\Html2Pdf->_executeAction()
+ 7 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(3136): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+ 8 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1444): Spipu\Html2Pdf\Html2Pdf->_tag_open_DIV()
+ 9 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1412): Spipu\Html2Pdf\Html2Pdf->_executeAction()
+10 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(3136): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+11 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1444): Spipu\Html2Pdf\Html2Pdf->_tag_open_DIV()
+12 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1412): Spipu\Html2Pdf\Html2Pdf->_executeAction()
+13 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(600): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+14 APPPATH/Controllers/CronJobController.php(49): Spipu\Html2Pdf\Html2Pdf->writeHTML()
+15 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CronJobController->sendCertificate()
+16 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+17 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+18 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-14 06:09:57 --> Undefined array key 0
+in VENDORPATH/spipu/html2pdf/src/Html2Pdf.php on line 5272.
+ 1 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(5272): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1444): Spipu\Html2Pdf\Html2Pdf->_tag_open_TR()
+ 3 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1412): Spipu\Html2Pdf\Html2Pdf->_executeAction()
+ 4 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(3136): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+ 5 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1444): Spipu\Html2Pdf\Html2Pdf->_tag_open_DIV()
+ 6 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1412): Spipu\Html2Pdf\Html2Pdf->_executeAction()
+ 7 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(3136): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+ 8 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1444): Spipu\Html2Pdf\Html2Pdf->_tag_open_DIV()
+ 9 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1412): Spipu\Html2Pdf\Html2Pdf->_executeAction()
+10 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(3136): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+11 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1444): Spipu\Html2Pdf\Html2Pdf->_tag_open_DIV()
+12 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(1412): Spipu\Html2Pdf\Html2Pdf->_executeAction()
+13 VENDORPATH/spipu/html2pdf/src/Html2Pdf.php(600): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+14 APPPATH/Controllers/CronJobController.php(49): Spipu\Html2Pdf\Html2Pdf->writeHTML()
+15 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\CronJobController->sendCertificate()
+16 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+17 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+18 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

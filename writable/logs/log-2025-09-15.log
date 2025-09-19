@@ -1,0 +1,536 @@
+ERROR - 2025-09-15 12:55:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-09-15 12:55:28 --> 220 mail.smtp2go.com ESMTP Exim 4.98.1-S2G Mon, 15 Sep 2025 05:55:26 +0000
+
+hello: 250-mail.smtp2go.com Hello pacer.co.id [103.185.52.54]
+250-SIZE 52428800
+250-LIMITS MAILMAX=5000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH CRAM-MD5 PLAIN LOGIN
+250-CHUNKING
+250-PRDR
+250 HELP
+
+from: 250 sender ok.
+
+to: 250 Accepted <sekretariat@pacer.co.id>
+
+data: 354 Enter message, ending with "." on a line by itself
+
+550-From header sender domain not verified (googlemail.com)
+550-On your Sending > Verified Senders page
+550 verify the sender domain or email to be allowed to send.
+
+quit: 221 mail.smtp2go.com closing connection
+
+The following SMTP error was encountered: 550-From header sender domain not verified (googlemail.com)
+550-On your Sending > Verified Senders page
+550 verify the sender domain or email to be allowed to send.
+
+CRITICAL - 2025-09-15 01:30:01 --> You do not have sufficient permissions to access that page.
+in VENDORPATH/myth/auth/src/Filters/RoleFilter.php on line 59.
+ 1 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\RoleFilter->before()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 13:55:13 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:03:48 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:03:55 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:04:29 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:09:22 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:09:23 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:09:23 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:09:23 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:11:33 --> Undefined array key "payment_slip_1"
+in APPPATH/Controllers/Invoice.php on line 408.
+ 1 APPPATH/Controllers/Invoice.php(408): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->proses_payment_personal_invoice()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:20:46 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:20:47 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:20:47 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-15 14:21:47 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL: Handshake timed out in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Email/Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Email/Email.php(1868): fsockopen()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /home/pacer.co.id/public_html/app/Controllers/Invoice.php(452): CodeIgniter\Email\Email->send()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Invoice->proses_payment_personal_invoice()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-09-15 14:21:47 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-09-15 14:21:47 --> 
+CRITICAL - 2025-09-15 14:23:14 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:23:14 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:23:14 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:25:48 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:25:48 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:25:48 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 02:30:25 --> You do not have sufficient permissions to access that page.
+in VENDORPATH/myth/auth/src/Filters/RoleFilter.php on line 59.
+ 1 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\RoleFilter->before()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 02:30:28 --> You do not have sufficient permissions to access that page.
+in VENDORPATH/myth/auth/src/Filters/RoleFilter.php on line 59.
+ 1 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\RoleFilter->before()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:38:27 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:38:27 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:40:11 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:40:11 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:43:22 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:43:22 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:43:50 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 110.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(110): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:43:53 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 110.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(110): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:43:55 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 110.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(110): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:44:00 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 110.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(110): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:44:05 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 110.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(110): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:44:10 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 110.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(110): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:44:21 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:44:22 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 110.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(110): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:44:31 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 14:44:50 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 110.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(110): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 18:21:10 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 110.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(110): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 18:41:44 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 110.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(110): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 18:56:13 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 110.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(110): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 18:57:37 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 114.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(114): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 18:58:03 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 118.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(118): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 18:58:23 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH/Views/Personal_invoice/Main.php on line 123.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/Personal_invoice/Main.php(123): number_format()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Personal_invoice/Main.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Invoice.php(320): view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Invoice->personal_invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:15:56 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:15:56 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:21:37 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:21:37 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:28:39 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:28:39 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:28:46 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:29:43 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:29:43 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:29:46 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:30:31 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:51:18 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 20:38:18 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 20:38:18 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 20:39:17 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 20:39:49 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 20:26:14 --> unlink(/home/pacer.co.id/public_html/writable/debugbar/debugbar_1757985903.679278.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(76): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(497): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(474): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(350): CodeIgniter\Events\Events::trigger()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

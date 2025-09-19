@@ -1,0 +1,368 @@
+ERROR - 2025-09-17 04:26:47 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-09-17 04:26:47 --> 220 mail.smtp2go.com ESMTP Exim 4.98.1-S2G Tue, 16 Sep 2025 21:26:44 +0000
+
+hello: 250-mail.smtp2go.com Hello pacer.co.id [103.185.52.54]
+250-SIZE 52428800
+250-LIMITS MAILMAX=5000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH CRAM-MD5 PLAIN LOGIN
+250-CHUNKING
+250-PRDR
+250 HELP
+
+from: 250 sender ok.
+
+to: 250 Accepted <sekretariat@pacer.co.id>
+
+data: 354 Enter message, ending with "." on a line by itself
+
+550-From header sender domain not verified (gmail.com)
+550-On your Sending > Verified Senders page
+550 verify the sender domain or email to be allowed to send.
+
+quit: 221 mail.smtp2go.com closing connection
+
+The following SMTP error was encountered: 550-From header sender domain not verified (gmail.com)
+550-On your Sending > Verified Senders page
+550 verify the sender domain or email to be allowed to send.
+
+CRITICAL - 2025-09-17 09:12:20 --> Attempt to read property "user_type_id" on null
+in APPPATH/Controllers/Notification.php on line 61.
+ 1 APPPATH/Controllers/Notification.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->get_notifications()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-17 10:59:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%IWAN%'  order by 1,2,3 asc' at line 39 in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-17 10:59:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%IWAN%'  order by 1,2,3 asc' at line 39
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-17 10:59:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%IWAN%'  order by 1,2,3 asc' at line 39 in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-17 10:59:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%IWAN%'  order by 1,2,3 asc' at line 39
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-17 11:10:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%DADI%'  order by 1,2,3 asc' at line 39 in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-17 11:10:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%DADI%'  order by 1,2,3 asc' at line 39
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-17 11:10:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%DADI%'  order by 1,2,3 asc' at line 39 in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-17 11:10:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%DADI%'  order by 1,2,3 asc' at line 39
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-17 11:10:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%DADI%'  order by 1,2,3 asc' at line 39 in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-17 11:10:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%DADI%'  order by 1,2,3 asc' at line 39
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-17 11:10:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%DADI%'  order by 1,2,3 asc' at line 39 in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-17 11:10:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%DADI%'  order by 1,2,3 asc' at line 39
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-17 11:10:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%DADI%'  order by 1,2,3 asc' at line 39 in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-17 11:10:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%DADI%'  order by 1,2,3 asc' at line 39
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-17 11:10:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%DADI%'  order by 1,2,3 asc' at line 39 in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-17 11:10:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%DADI%'  order by 1,2,3 asc' at line 39
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-17 11:15:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%WAHYU%'  order by 1,2,3 asc' at line 39 in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-17 11:15:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%WAHYU%'  order by 1,2,3 asc' at line 39
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-17 11:19:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%PONDA%'  order by 1,2,3 asc' at line 39 in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-17 11:19:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%PONDA%'  order by 1,2,3 asc' at line 39
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-17 11:19:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%PONDA%'  order by 1,2,3 asc' at line 39 in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-17 11:19:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%PONDA%'  order by 1,2,3 asc' at line 39
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-17 11:19:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%PONDA%'  order by 1,2,3 asc' at line 39 in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-17 11:19:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%PONDA%'  order by 1,2,3 asc' at line 39
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-17 11:19:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%PONDA%'  order by 1,2,3 asc' at line 39 in /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/pacer.co.id/public_html/app/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pacer.co.id/public_html/app/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+#5 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+#6 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/pacer.co.id/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/pacer.co.id/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-17 11:19:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE UPPER(d.full_name) LIKE '%PONDA%'  order by 1,2,3 asc' at line 39
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Models/ScoringFinalModel.php(125): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/ScoringFinal.php(63): App\Models\ScoringFinalModel->jqgrid_scoring_final()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ScoringFinal->jqgrid_scoring_final()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-17 18:26:12 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-17 18:26:12 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-17 18:26:14 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-17 18:26:14 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-17 18:28:19 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-17 18:28:19 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-17 18:28:32 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-17 18:28:57 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-17 18:40:34 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-17 18:40:39 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Certification.php on line 731.
+ 1 APPPATH/Controllers/Certification.php(731): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Certification->get_cost_multi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
