@@ -33,9 +33,9 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => 'pacer_pacer_pacerco2',
-        'password' => '0yrXXahPac3r1',
-        'database' => 'pacer_pacer_pacerco2',
+        'username' => 'stg_stgpaceradmin',
+        'password' => '8G-G8OMFP3%B6BCE',
+        'database' => 'stg_stgpacerdb',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
