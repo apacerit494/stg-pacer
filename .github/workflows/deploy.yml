@@ -20,7 +20,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: 22
           script: |
-            cd /home/DOMAIN/public_html   # path project di CyberPanel
+            cd /home/stg.pacer.co.id/public_html   # path project di CyberPanel
             git fetch --tags
             git checkout ${{ github.event.release.tag_name }} -f
             composer install --no-dev --optimize-autoloader
