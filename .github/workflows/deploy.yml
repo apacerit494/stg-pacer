@@ -1,28 +1,53 @@
-name: Deploy on Release
+name: Deploy to pacer.co.id
 
 on:
+  push:
+    branches: [ master ]
   release:
-    types: [published]   # hanya jalan kalau release baru dipublish
+    types: [published]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
 
-      - name: Deploy to VPS via SSH
-        uses: appleboy/ssh-action@v1.1.0
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          port: 22
-          script: |
-            cd /home/stg.pacer.co.id/public_html
-            git fetch --all
-            git checkout ${{ github.event.release.tag_name }} -f
-            git pull origin ${{ github.event.release.tag_name }}
-            composer install --no-dev --optimize-autoloader
-            php spark cache:clear
+    - name: Setup SSH
+      uses: webfactory/ssh-agent@v0.7.0
+      with:
+        ssh-private-key: ${{ secrets.VPS_SSH_KEY }}
+
+    - name: Deploy to Production
+      run: |
+        ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+          # Navigate to website directory
+          cd cd /home/stg.pacer.co.id/public_html
+          
+          # Backup current version dengan timestamp
+          tar -czf ../backups/backup-$(date +%Y%m%d-%H%M%S).tar.gz .
+          
+          # Pull changes dari repository
+          git fetch origin master
+          git reset --hard origin/master
+          
+          # Install dependencies jika diperlukan (contoh untuk PHP)
+          composer install --no-dev --optimize-autoloader
+          
+          # Set permissions
+          chown -R nobody:nobody .
+          find . -type d -exec chmod 755 {} \;
+          find . -type f -exec chmod 644 {} \;
+          chmod 777 uploads/ cache/ # jika ada folder yang perlu write permission
+          
+          # Clear cache jika diperlukan
+          rm -rf cache/*
+          
+          # Restart services jika diperlukan
+          systemctl restart lscpd
+          
+          echo "Deployment to st.pacer.co.id completed successfully!"
+        EOF
