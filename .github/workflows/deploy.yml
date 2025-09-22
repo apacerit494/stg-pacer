@@ -29,7 +29,7 @@ jobs:
           port: 22
           script: |
             echo "=== DEPLOYING TO STAGING SERVER ==="
-            cd /home/stg.pacer.co.id/public_html/public
+            cd /home/stg.pacer.co.id/public_html
 
             echo "Resetting local changes..."
             git reset --hard HEAD
@@ -76,7 +76,7 @@ jobs:
           port: 22
           script: |
             echo "=== DEPLOYING TO PRODUCTION SERVER ==="
-            cd /home/pacer.co.id/public_html/public
+            cd /home/pacer.co.id/public_html
 
             echo "Backing up database before deployment..."
             bash /home/pacer.co.id/backup.sh || true
