@@ -51,12 +51,27 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <form action="<?php echo site_url('Home/directory') ?>" method="post">
+                        <h5>Search Certificant</h5>
+                        <label for="name">Certificant's Name</label>
+                        <input id="name" name="name" type="text" value="<?php echo $name ?>" autocomplete="off"/>
+
+                        <label for="certificate">Certificate Number</label>
+                        <input id="certificate" name="certificate" type="text" value="<?php echo $certificate ?>" autocomplete="off"/>
+
+                        <label for="scope">Scope</label>
+                        <input id="scope" name="scope" type="text" value="<?php echo $scope ?>" autocomplete="off"/>
+
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
             
             <div class="row">
                 <div class="col-md-12 col-sm-6 col-xs-12">
-                    <h5>Please type your name in the search field provided</h5>
                     <hr>
-                    <h3>Passed</h3>
                     <table id="example" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
@@ -91,117 +106,16 @@
                             }
                             }else{
                                 ?>
-                                <tr><td colspan='8' style="text-align : center">No record found.</td></tr>
-                            <?php
-                            }
-                            ?>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th style="text-align:center;vertical-align: middle;">Num</th>
-                                <th style="text-align:center;vertical-align: middle;">Certificate Num</th>
-                                <th style="text-align:center;vertical-align: middle;">Name</th>
-                                <th style="text-align:center;vertical-align: middle;">Scope</th>
-                                <th style="text-align:center;vertical-align: middle;">Field Code</th>
-                                <th style="text-align:center;vertical-align: middle;">Level</th>
-                                <th style="text-align:center;vertical-align: middle;">Start Date</th>
-                                <th style="text-align:center;vertical-align: middle;">End Date</th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    
-                    <hr>
-                    <h3>Suspended</h3>
-                    <table id="example" class="table table-striped table-bordered" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th style="text-align:center;vertical-align: middle;">Num</th>
-                                <th style="text-align:center;vertical-align: middle;">Certificate Num</th>
-                                <th style="text-align:center;vertical-align: middle;">Name</th>
-                                <th style="text-align:center;vertical-align: middle;">Scope</th>
-                                <th style="text-align:center;vertical-align: middle;">Field Code</th>
-                                <th style="text-align:center;vertical-align: middle;">Level</th>
-                                <th style="text-align:center;vertical-align: middle;">Start Date</th>
-                                <th style="text-align:center;vertical-align: middle;">End Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            $num = 1;
-                            if(count($auditors2)>0){
-                            foreach ($auditors2 as $auditor) {
-                            ?>
                                 <tr>
-                                    <td><?= $num; ?></td>
-                                    <td><?= $auditor['certification_number'] ?></td>
-                                    <td><?= $auditor['full_name'] ?></td>
-                                    <td><?= $auditor['scope_code'] ?></td>
-                                    <td><?= $auditor['field_code'] ?></td>
-                                    <td><?= $auditor['level_auditor'] ?></td>
-                                    <td><?= date('d M Y', strtotime($auditor['start_date'])); ?></td>
-                                    <td><?= date('d M Y', strtotime($auditor['end_date'])); ?></td>
+                                    <td style="text-align : center">No record found.</td>
+                                    <td style="text-align : center"></td>
+                                    <td style="text-align : center"></td>
+                                    <td style="text-align : center"></td>
+                                    <td style="text-align : center"></td>
+                                    <td style="text-align : center"></td>
+                                    <td style="text-align : center"></td>
+                                    <td style="text-align : center"></td>
                                 </tr>
-                            <?php
-                                $num++;
-                            }
-                            }else{
-                                ?>
-                                <tr><td colspan='8' style="text-align : center">No record found.</td></tr>
-                            <?php
-                            }
-                            ?>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th style="text-align:center;vertical-align: middle;">Num</th>
-                                <th style="text-align:center;vertical-align: middle;">Certificate Num</th>
-                                <th style="text-align:center;vertical-align: middle;">Name</th>
-                                <th style="text-align:center;vertical-align: middle;">Scope</th>
-                                <th style="text-align:center;vertical-align: middle;">Field Code</th>
-                                <th style="text-align:center;vertical-align: middle;">Level</th>
-                                <th style="text-align:center;vertical-align: middle;">Start Date</th>
-                                <th style="text-align:center;vertical-align: middle;">End Date</th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    
-                    <hr>
-                    <h3>Withdrawn</h3>
-                    <table id="example" class="table table-striped table-bordered" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th style="text-align:center;vertical-align: middle;">Num</th>
-                                <th style="text-align:center;vertical-align: middle;">Certificate Num</th>
-                                <th style="text-align:center;vertical-align: middle;">Name</th>
-                                <th style="text-align:center;vertical-align: middle;">Scope</th>
-                                <th style="text-align:center;vertical-align: middle;">Field Code</th>
-                                <th style="text-align:center;vertical-align: middle;">Level</th>
-                                <th style="text-align:center;vertical-align: middle;">Start Date</th>
-                                <th style="text-align:center;vertical-align: middle;">End Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            $num = 1;
-                            if(count($auditors3)>0){
-                            foreach ($auditors3 as $auditor) {
-                            ?>
-                                <tr>
-                                    <td><?= $num; ?></td>
-                                    <td><?= $auditor['certification_number'] ?></td>
-                                    <td><?= $auditor['full_name'] ?></td>
-                                    <td><?= $auditor['scope_code'] ?></td>
-                                    <td><?= $auditor['field_code'] ?></td>
-                                    <td><?= $auditor['level_auditor'] ?></td>
-                                    <td><?= date('d M Y', strtotime($auditor['start_date'])); ?></td>
-                                    <td><?= date('d M Y', strtotime($auditor['end_date'])); ?></td>
-                                </tr>
-                            <?php
-                                $num++;
-                            }
-                            }else{
-                                ?>
-                                <tr><td colspan='8' style="text-align : center">No record found.</td></tr>
                             <?php
                             }
                             ?>

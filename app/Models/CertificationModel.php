@@ -292,8 +292,12 @@ class CertificationModel extends Model
         }
     }
     
-    public function get_certification_assesmented()
+    public function get_certification_assesmented($name = null, $certificate = null, $scope = null)
     {
+        if (empty($name) && empty($certificate) && empty($scope)) {
+            return [];
+        }
+
         $sql = "SELECT d.full_name,a.certification_id,a.certification_number,e.scope_code,e.scope_description,IF(a.level_auditor=1,'Auditor Mula',IF(a.level_auditor=2,'Auditor',IF(a.level_auditor=3,'Auditor Kepala','Auditor Utama'))) AS level_auditor,a.start_date,a.end_date
             FROM certification a
             LEFT JOIN assignment b ON (b.certification_id = a.certification_id)
@@ -301,7 +305,20 @@ class CertificationModel extends Model
             LEFT JOIN users d ON(a.user_id = d.id)
             LEFT JOIN ref_scope e ON(a.scope_id = e.scope_id)
             LEFT JOIN (SELECT invoice.certification_id,COUNT(invoice.status) AS paid FROM invoice WHERE invoice.status='2' GROUP BY invoice.certification_id) f ON(a.certification_id = f.certification_id)
-            WHERE a.status ='3' AND c.scope_score='Y' AND c.status='2' AND f.paid=2 AND YEAR(a.start_date) > YEAR(NOW())-5 ORDER BY a.start_date DESC";
+            WHERE c.scope_score='Y' AND c.status='2' AND f.paid=2 AND YEAR(a.start_date) > YEAR(NOW())-5";
+
+        if (!empty($name)) {
+            $sql .= " AND d.full_name LIKE '%".$name."%'";
+        }
+        if (!empty($certificate)) {
+            $sql .= " AND a.certification_number LIKE '%".$certificate."%'";
+        }
+        if (!empty($scope)) {
+            $sql .= " AND (e.scope_code LIKE '%".$scope."%' OR e.scope_description LIKE '%".$scope."%')";
+        }
+
+        $sql .= " ORDER BY a.start_date DESC";
+        
         $query = $this->db->query($sql);
         return $query->getResultArray();
     }

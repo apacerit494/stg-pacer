@@ -1,34 +1,109 @@
-name: Deploy on Release
+name: CI/CD Deployment
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - master        # Jika ada push ke branch master → deploy ke STAGING
+    tags:
+      - 'v*'          # Jika push tag (misal v1.0.0) → deploy ke PRODUCTION
 
 jobs:
-  deploy:
+  # ================================
+  # 1. Deploy ke Staging (stg.pacer.co.id)
+  # ================================
+  deploy-staging:
+    name: Deploy to Staging
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master' # Pastikan hanya jalan saat push ke master
 
     steps:
-      - name: Checkout release source
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Debug check secrets
-        run: |
-          echo "Host set? ${{ secrets.VPS_HOST != '' }}"
-          echo "User set? ${{ secrets.VPS_USER != '' }}"
-          echo "Key set? ${{ secrets.VPS_SSH_KEY != '' }}"
-
-      - name: Deploy to CyberPanel (VPS)
-        uses: appleboy/ssh-action@v1.1.0
+      - name: Deploy to Staging via SSH
+        uses: appleboy/ssh-action@v0.1.10
         with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
+          host: ${{ secrets.STAGING_VPS_HOST }}
+          username: ${{ secrets.STAGING_VPS_USER }}
+          key: ${{ secrets.STAGING_VPS_KEY }}
           port: 22
           script: |
-            cd /home/stg.pacer.co.id/public_html   # ganti sesuai path project di CyberPanel
-            git fetch origin --tags
-            git reset --hard
-            git checkout ${{ github.event.release.tag_name }} -f
+            echo "=== DEPLOYING TO STAGING SERVER ==="
+            cd /home/stg.pacer.co.id/public_html/public
+
+            echo "Resetting local changes..."
+            git reset --hard HEAD
+
+            echo "Pulling latest code from master..."
+            git pull origin master
+
+            echo "Installing dependencies..."
             composer install --no-dev --optimize-autoloader
-            php spark cache:clear
+
+            echo "Running migrations..."
+            php artisan migrate --force || true
+
+            echo "Clearing cache..."
+            php artisan cache:clear
+            php artisan config:clear
+            php artisan route:clear
+            php artisan view:clear
+            php artisan optimize
+
+            echo "Setting folder permissions..."
+            chmod -R 775 storage bootstrap/cache
+
+            echo "Staging deployment completed successfully!"
+
+  # ================================
+  # 2. Deploy ke Production (pacer.co.id)
+  # ================================
+  deploy-production:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v') # Pastikan hanya jalan saat ada release tag
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to Production via SSH
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.PRODUCTION_VPS_HOST }}
+          username: ${{ secrets.PRODUCTION_VPS_USER }}
+          key: ${{ secrets.PRODUCTION_VPS_KEY }}
+          port: 22
+          script: |
+            echo "=== DEPLOYING TO PRODUCTION SERVER ==="
+            cd /home/pacer.co.id/public_html/public
+
+            echo "Backing up database before deployment..."
+            bash /home/pacer.co.id/backup.sh || true
+
+            echo "Resetting local changes..."
+            git reset --hard HEAD
+
+            echo "Fetching latest tags..."
+            git fetch --tags
+
+            echo "Checking out release tag: $GITHUB_REF_NAME"
+            git checkout $GITHUB_REF_NAME
+
+            echo "Installing dependencies..."
+            composer install --no-dev --optimize-autoloader
+
+            echo "Running migrations..."
+            php artisan migrate --force || true
+
+            echo "Clearing cache..."
+            php artisan cache:clear
+            php artisan config:clear
+            php artisan route:clear
+            php artisan view:clear
+            php artisan optimize
+
+            echo "Setting folder permissions..."
+            chmod -R 775 storage bootstrap/cache
+
+            echo "Production deployment completed successfully!"

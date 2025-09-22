@@ -75,7 +75,15 @@ class Home extends BaseController
     
     public function directory()
     {
-        $auditors = $this->CertificationModel->get_certification_assesmented();
+        $name = $this->request->getPost('name');
+        $certificate = $this->request->getPost('certificate');
+        $scope = $this->request->getPost('scope');
+
+        $data['name'] = $name;
+        $data['certificate'] = $certificate;
+        $data['scope'] = $scope;
+
+        $auditors = $this->CertificationModel->get_certification_assesmented($name, $certificate, $scope);
         $data['auditors'] = [];
         foreach($auditors as $auditor){
             $fieldcodes = $this->CertificationModel->get_certification_fieldcode2($auditor['certification_id']);
@@ -100,62 +108,6 @@ class Home extends BaseController
             ];
             
             array_push($data['auditors'],$a);
-            $data['fieldcode'][$auditor['certification_id']] = $fc;
-        }
-        
-        $auditors2 = $this->CertificationModel->get_certification_assesmented2();
-        $data['auditors2'] = [];
-        foreach($auditors2 as $auditor){
-            $fieldcodes = $this->CertificationModel->get_certification_fieldcode2($auditor['certification_id']);
-            $fc = '';
-            foreach($fieldcodes as $fieldcode){
-                $field = $this->FieldCodeModel->get_data_field_code_by_id2($fieldcode);
-                foreach($field as $v => $i){
-                  $fc = $fc. (($fc!=='')?', ':'') .'<abbr title="'.$field['fieldcode_description'].'">'.$field['fieldcode_code'].'</abbr>';
-                  break;
-                }
-            }
-            $a = [
-            'full_name' => $auditor['full_name'],
-            'certification_id' => $auditor['certification_id'],
-            'certification_number' => $auditor['certification_number'],
-            'scope_code' => '<abbr title="'.$auditor['scope_description'].'">'.$auditor['scope_code'].'</abbr>',
-            'scope_description' => $auditor['scope_description'],
-            'level_auditor' => $auditor['level_auditor'],
-            'start_date' => $auditor['start_date'],
-            'end_date' => $auditor['end_date'],
-            'field_code' =>$fc
-            ];
-            
-            array_push($data['auditors2'],$a);
-            $data['fieldcode'][$auditor['certification_id']] = $fc;
-        }
-        
-        $auditors3 = $this->CertificationModel->get_certification_assesmented3();
-        $data['auditors3'] = [];
-        foreach($auditors3 as $auditor){
-            $fieldcodes = $this->CertificationModel->get_certification_fieldcode2($auditor['certification_id']);
-            $fc = '';
-            foreach($fieldcodes as $fieldcode){
-                $field = $this->FieldCodeModel->get_data_field_code_by_id2($fieldcode);
-                foreach($field as $v => $i){
-                  $fc = $fc. (($fc!=='')?', ':'') .'<abbr title="'.$field['fieldcode_description'].'">'.$field['fieldcode_code'].'</abbr>';
-                  break;
-                }
-            }
-            $a = [
-            'full_name' => $auditor['full_name'],
-            'certification_id' => $auditor['certification_id'],
-            'certification_number' => $auditor['certification_number'],
-            'scope_code' => '<abbr title="'.$auditor['scope_description'].'">'.$auditor['scope_code'].'</abbr>',
-            'scope_description' => $auditor['scope_description'],
-            'level_auditor' => $auditor['level_auditor'],
-            'start_date' => $auditor['start_date'],
-            'end_date' => $auditor['end_date'],
-            'field_code' =>$fc
-            ];
-            
-            array_push($data['auditors3'],$a);
             $data['fieldcode'][$auditor['certification_id']] = $fc;
         }
         

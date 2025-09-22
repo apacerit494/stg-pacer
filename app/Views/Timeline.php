@@ -48,7 +48,7 @@
 
 
                 <h1>
-                    Timeline Pengajuan Sertifikasi 30
+                    Timeline Pengajuan Sertifikasi 30g
                 </h1>
                 <br>
                 <!-- SmartWizard html -->

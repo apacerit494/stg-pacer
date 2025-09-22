@@ -372,6 +372,7 @@ $routes->get('/pdf/print_certificate/(:any)', 'Pdf::print_certificate/$1');
 
 $routes->get('/Home/directory', 'Home::directory');
 $routes->post('/Home/send_message', 'Home::send_message');
+$routes->match(['get', 'post'], 'Home/directory', 'Home::directory');
 
 /** Committee Over Due */
 $routes->get('/Assignment/committee_over_due', 'Assignment::committee_over_due', ['filter' => 'role:super_admin,admin,secretariat']);
