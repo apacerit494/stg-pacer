@@ -12,6 +12,12 @@ jobs:
       - name: Checkout release source
         uses: actions/checkout@v3
 
+      - name: Debug check secrets
+        run: |
+          echo "Host set? ${{ secrets.VPS_HOST != '' }}"
+          echo "User set? ${{ secrets.VPS_USER != '' }}"
+          echo "Key set? ${{ secrets.VPS_SSH_KEY != '' }}"
+
       - name: Deploy to CyberPanel (VPS)
         uses: appleboy/ssh-action@v1.1.0
         with:
@@ -20,8 +26,9 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: 22
           script: |
-            cd /home/stg.pacer.co.id/public_html   # path project di CyberPanel
-            git fetch --tags
+            cd /home/stg.pacer.co.id/public_html   # ganti sesuai path project di CyberPanel
+            git fetch origin --tags
+            git reset --hard
             git checkout ${{ github.event.release.tag_name }} -f
             composer install --no-dev --optimize-autoloader
             php spark cache:clear
