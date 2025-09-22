@@ -75,7 +75,7 @@
                         <div id="step-1" class="tab-pane" role="tabpanel" aria-labelledby="step-1">
                             <h3>Langkah 1</h3>
                             <table>
-                                    <tr style="">
+                                    <tr>
                                         <td>a.</td>
                                         <td>  </td>
                                         <td>Pelajari Persyaratan Sertifikasi dengan mendownload skema sertifikasi pada menu “Download berkas”</td>
