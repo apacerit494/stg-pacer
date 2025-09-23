@@ -48,7 +48,7 @@
 
 
                 <h1>
-                    Timeline Pengajuan Sertifikasi 52
+                    Timeline Pengajuan Sertifikasi 5252
                 </h1>
                 <br>
                 <!-- SmartWizard html -->
