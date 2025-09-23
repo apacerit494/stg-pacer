@@ -3,18 +3,15 @@ name: CI/CD Deployment
 on:
   push:
     branches:
-      - master        # Jika ada push ke branch master → deploy ke STAGING
+      - master
     tags:
-      - 'v*'          # Jika push tag (misal v1.0.0) → deploy ke PRODUCTION
+      - 'v*'
 
 jobs:
-  # ================================
-  # 1. Deploy ke Staging (stg.pacer.co.id)
-  # ================================
   deploy-staging:
     name: Deploy to Staging
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master' # Pastikan hanya jalan saat push ke master
+    if: github.ref == 'refs/heads/master'
 
     steps:
       - name: Checkout code
@@ -37,31 +34,21 @@ jobs:
             echo "Pulling latest code from master..."
             git pull origin master
 
-            echo "Installing dependencies..."
+            echo "Installing dependencies via Composer..."
             composer install --no-dev --optimize-autoloader
 
-            echo "Running migrations..."
-            php artisan migrate --force || true
-
-            echo "Clearing cache..."
-            php artisan cache:clear
-            php artisan config:clear
-            php artisan route:clear
-            php artisan view:clear
-            php artisan optimize
+            echo "Clearing writable cache..."
+            rm -rf writable/cache/* || true
 
             echo "Setting folder permissions..."
-            chmod -R 775 storage bootstrap/cache
+            chmod -R 775 writable
 
             echo "Staging deployment completed successfully!"
 
-  # ================================
-  # 2. Deploy ke Production (pacer.co.id)
-  # ================================
   deploy-production:
     name: Deploy to Production
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/v') # Pastikan hanya jalan saat ada release tag
+    if: startsWith(github.ref, 'refs/tags/v')
 
     steps:
       - name: Checkout code
@@ -90,20 +77,14 @@ jobs:
             echo "Checking out release tag: $GITHUB_REF_NAME"
             git checkout $GITHUB_REF_NAME
 
-            echo "Installing dependencies..."
+            echo "Installing dependencies via Composer..."
             composer install --no-dev --optimize-autoloader
 
-            echo "Running migrations..."
-            php artisan migrate --force || true
-
-            echo "Clearing cache..."
-            php artisan cache:clear
-            php artisan config:clear
-            php artisan route:clear
-            php artisan view:clear
-            php artisan optimize
+            
+            echo "Clearing writable cache..."
+            rm -rf writable/cache/* || true
 
             echo "Setting folder permissions..."
-            chmod -R 775 storage bootstrap/cache
+            chmod -R 775 writable
 
             echo "Production deployment completed successfully!"
